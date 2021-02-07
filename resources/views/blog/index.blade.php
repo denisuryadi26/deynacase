@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     @include('layout.head')
-    <title>Data Pemasukan - deynacase.com</title>
+    <title>Blog - deynacase.com</title>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
