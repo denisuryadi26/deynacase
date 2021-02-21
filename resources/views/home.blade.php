@@ -182,7 +182,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     text: 'Source: Wikipedia.org'
                 },
                 xAxis: {
-                    categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
                     tickmarkPlacement: 'on',
                     title: {
                         enabled: false
@@ -215,7 +215,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 },
                 series: [{
                     name: 'Asia',
-                    data: [502, 635, 809, 947, 1402, 3634, 5268]
+                    data: [502, 635, 809, 947, 1402, 3634, 5268, 1234, 3333, 5555, 1231, 4321]
                 }],
                 credits: {
                     enabled: false
@@ -234,7 +234,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     text: 'Source: Wikipedia.org'
                 },
                 xAxis: {
-                    categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
+                    categories: ['2018', '2019', '2020', '2021'],
                     tickmarkPlacement: 'on',
                     title: {
                         enabled: false
@@ -267,7 +267,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 },
                 series: [{
                     name: 'Asia',
-                    data: [502, 635, 809, 947, 1402, 3634, 5268]
+                    data: [502, 635, 809, 947]
                 }],
                 credits: {
                     enabled: false

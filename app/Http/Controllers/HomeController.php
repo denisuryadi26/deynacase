@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
 use App\Models\Pemasukan;
+use App\Charts\SampleChart;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -33,8 +34,12 @@ class HomeController extends Controller
         $totalprofit = DB::table('pemasukans')->select(DB::raw('sum(profit) as profit'))->get();
 
         $pemasukans = Pemasukan::latest()->paginate(10);
+        $sampleChart = new SampleChart;
+        $sampleChart->labels(['Jan', 'Feb', 'Mar']);
+        $sampleChart->dataset('Users by trimester', 'line', [10, 25, 13]);
         return view('home', compact('pemasukans'), [ 'totalprofit' => $totalprofit, 
                                                                 'profitthisyears' => $profitthisyears, 
-                                                                'profitthismonth' => $profitthismonth]);
+                                                                'profitthismonth' => $profitthismonth,
+                                                                'sampleChart'     => $sampleChart]);
     }
 }
