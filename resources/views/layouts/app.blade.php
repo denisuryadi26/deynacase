@@ -19,10 +19,7 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
-        {{-- ChartScript --}}
-        @if($sampleChart)
-        {!! $sampleChart->script() !!}
-        @endif
+        
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
