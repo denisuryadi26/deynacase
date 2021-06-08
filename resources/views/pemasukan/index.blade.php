@@ -119,7 +119,7 @@
                             <div class="card border-0 shadow rounded">
                                 <div class="card-body">
                                     <a href="{{ route('pemasukan.create') }}" class="btn btn-md btn-success mb-3">TAMBAH PEMASUKAN</a>
-                                    <a href="{{ route('pemasukan.export_excel') }}" class="btn btn-md btn-success mb-3" target="_blank">EXPORT EXCEL</a>
+                                    <a href="#" class="btn btn-md btn-success mb-3" target="_blank">EXPORT EXCEL</a>
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>

@@ -26,11 +26,12 @@ Route::get('/', function () {
 //     Route::resource('pemasukan', 'PemasukanController');        
 // });
 
-Route::resource('pemasukan', PemasukanController::class);
-Route::get('/pemasukan', 'PemasukanController@index');
+// Route::resource('pemasukan', PemasukanController::class);
+// Route::get('/pemasukan', 'PemasukanController@index');
+Route::resource('pemasukan','PemasukanController');
 // Route::get('/pemasukan/export_excel', 'PemasukanController@export_excel');
-Route::get('/pemasukan/export_excel', 'PemasukanController@export_excel')->name('pemasukan.export_excel');
-Route::get('export_excel', [PemasukanController::class, 'export_excel'])->name('pemasukan');
+// Route::get('/pemasukan/export_excel', 'PemasukanController@export_excel')->name('pemasukan.export_excel');
+// Route::get('export_excel', [PemasukanController::class, 'export_excel'])->name('pemasukan');
 Route::resource('blog', BlogController::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
